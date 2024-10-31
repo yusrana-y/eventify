@@ -1,0 +1,27 @@
+import commonAPI from "./commonAPI";
+import serverURL from "./serverURL";
+
+// add an event post request called by Add component
+
+export const addEventAPI = async(reqBody)=>{
+    return await commonAPI("POST",`${serverURL}/allEvents`,reqBody)
+}
+
+// get all the events get request called by View component
+
+export const getAllEventsAPI = async()=>{
+    return await commonAPI("GET",`${serverURL}/allEvents`,"")
+}
+
+// get single event get request called by Event component
+
+export const getSingleEventAPI = async(eventId)=>{
+    return await commonAPI("GET",`${serverURL}/allEvents/${eventId}`,"")
+}
+
+//delete a single event DELETE request called by EventCard
+
+export const deleteSingleEventAPI = async(eventId)=>{
+    return await commonAPI("DELETE",`${serverURL}/allEvents/${eventId}`,{})
+}
+

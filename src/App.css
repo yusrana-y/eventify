@@ -1,0 +1,67 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+.hero-section .ball {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: float 6s ease-in-out infinite;
+}
+
+.hero-section .purple-light {
+  background-color: #e0b3ff;
+  width: 80px;
+  height: 80px;
+  top: 20%;
+  left: 10%;
+}
+
+.hero-section .purple-medium {
+  background-color: #c580ff;
+  width: 100px;
+  height: 100px;
+  top: 60%;
+  left: 25%;
+}
+
+.hero-section .purple-dark {
+  background-color: #a64dff;
+  width: 70px;
+  height: 70px;
+  top: 30%;
+  right: 15%;
+}
+
+.hero-section .purple-darker {
+  background-color: #8c1aff;
+  width: 90px;
+  height: 90px;
+  bottom: 20%;
+  left: 5%;
+}
+
+.hero-section .purple-lighter {
+  background-color: #f0e0ff;
+  width: 60px;
+  height: 60px;
+  bottom: 30%;
+  right: 20%;
+}
+
+.hero-section .purple-medium-dark {
+  background-color: #b366ff;
+  width: 120px;
+  height: 120px;
+  top: 10%;
+  right: 25%;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
